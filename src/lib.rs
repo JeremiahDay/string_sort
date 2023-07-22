@@ -83,7 +83,7 @@ mod lsd {
 
 mod msd {
     use crate::WordRc;
-    use std::{rc::Rc};
+    use std::rc::Rc;
 
     const R: usize = 256;
     const CUTOFF: u8 = 1;
@@ -137,7 +137,7 @@ mod msd {
                                 lo: f.lo + f.count[r],
                                 hi: f.lo + f.count[r + 1],
                                 d: f.d + 1,
-                                count: count,
+                                count,
                                 r: None,
                             };
 
@@ -183,7 +183,7 @@ mod msd {
                             lo: f.lo + f.count[0],
                             hi: f.lo + f.count[1],
                             d: f.d + 1,
-                            count: count,
+                            count,
                             r: None,
                         };
 
